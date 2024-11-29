@@ -112,3 +112,21 @@ header h1 {
   text-align: center;
   margin-top: auto;
 }
+
+/* # tags */
+
+.tag-html {
+  color: green;
+}
+
+.tag-css {
+  color: blue;
+}
+
+.tag-php {
+  color: pink;
+}
+
+.tag-js {
+  color: yellow;
+}

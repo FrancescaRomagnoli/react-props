@@ -16,6 +16,15 @@ export default function Main() {
   });
   console.log(tagsList);
 
+  // # tags colors
+  function assignColorToTag(tag) {
+    if (tag === "html") return "tag-html";
+    if (tag === "css") return "tag-css";
+    if (tag === "php") return "tag-php";
+    if (tag === "js") return "tag-js";
+    return "";
+  }
+
   return (
     <main>
       <div className="container">
@@ -39,7 +48,7 @@ export default function Main() {
           <div>
             <ul>
               {tagsList.map((tag) => {
-                return <li>{tag}</li>;
+                return <li className={assignColorToTag(tag)}>{tag}</li>;
               })}
             </ul>
           </div>

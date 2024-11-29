@@ -1,4 +1,5 @@
-import placeholderImg from "../../assets/img/placeholder.png";
+// import placeholderImg from "../../assets/img/placeholder.png";
+const placeholderImg = "https://picsum.photos/600/400";
 
 export default function Card({ title, img, description }) {
   const imagePath = img || placeholderImg;
@@ -9,8 +10,8 @@ export default function Card({ title, img, description }) {
         <img src={imagePath} alt="" className="card-img" />
       </div>
       <div className="card-body">
-        <h3>{title}</h3>
-        <p>{description}</p>
+        {title && <h3>{title}</h3>}
+        {description && <p>{description}</p>}
         <button className="btn warning">leggi di più</button>
       </div>
     </div>
